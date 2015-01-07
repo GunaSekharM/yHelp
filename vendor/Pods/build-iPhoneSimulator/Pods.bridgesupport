@@ -1,0 +1,470 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant const='true' declared_type='NSInteger' name='kIQDoneButtonToolbarTag' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kIQPreviousNextButtonToolbarTag' type='i' type64='q'/>
+<enum name='IQAutoToolbarByPosition' value='2'/>
+<enum name='IQAutoToolbarBySubviews' value='0'/>
+<enum name='IQAutoToolbarByTag' value='1'/>
+<enum name='IQ_IS_IOS8_OR_GREATER' value='0'/>
+<class name='IQKeyboardManager'>
+<method selector='canAdjustTextView'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isEnableAutoToolbar'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='keyboardAppearance'>
+<retval declared_type='UIKeyboardAppearance' type='i' type64='q'/>
+</method>
+<method selector='keyboardDistanceFromTextField'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method class_method='true' selector='new'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='overrideKeyboardAppearance'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='placeholderFont'>
+<retval declared_type='UIFont*' type='@'/>
+</method>
+<method selector='preventShowingBottomBlankSpace'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='resignFirstResponder'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCanAdjustTextView:'>
+<arg declared_type='BOOL' index='0' name='canAdjustTextView' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEnable:'>
+<arg declared_type='BOOL' index='0' name='enable' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEnableAutoToolbar:'>
+<arg declared_type='BOOL' index='0' name='enableAutoToolbar' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setKeyboardAppearance:'>
+<arg declared_type='UIKeyboardAppearance' index='0' name='keyboardAppearance' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setKeyboardDistanceFromTextField:'>
+<arg declared_type='CGFloat' index='0' name='keyboardDistanceFromTextField' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOverrideKeyboardAppearance:'>
+<arg declared_type='BOOL' index='0' name='overrideKeyboardAppearance' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPlaceholderFont:'>
+<arg declared_type='UIFont*' index='0' name='placeholderFont' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPreventShowingBottomBlankSpace:'>
+<arg declared_type='BOOL' index='0' name='preventShowingBottomBlankSpace' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldAdoptDefaultKeyboardAnimation:'>
+<arg declared_type='BOOL' index='0' name='shouldAdoptDefaultKeyboardAnimation' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldPlayInputClicks:'>
+<arg declared_type='BOOL' index='0' name='shouldPlayInputClicks' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldResignOnTouchOutside:'>
+<arg declared_type='BOOL' index='0' name='shouldResignOnTouchOutside' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldShowTextFieldPlaceholder:'>
+<arg declared_type='BOOL' index='0' name='shouldShowTextFieldPlaceholder' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldToolbarUsesTextFieldTintColor:'>
+<arg declared_type='BOOL' index='0' name='shouldToolbarUsesTextFieldTintColor' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setToolbarManageBehaviour:'>
+<arg declared_type='IQAutoToolbarManageBehaviour' index='0' name='toolbarManageBehaviour' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedManager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='shouldAdoptDefaultKeyboardAnimation'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldPlayInputClicks'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldResignOnTouchOutside'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldShowTextFieldPlaceholder'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldToolbarUsesTextFieldTintColor'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='toolbarManageBehaviour'>
+<retval declared_type='IQAutoToolbarManageBehaviour' type='i' type64='q'/>
+</method>
+</class>
+<class name='IQKeyboardReturnKeyHandler'>
+<method selector='addResponderFromView:'>
+<arg declared_type='UIView*' index='0' name='view' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addTextFieldView:'>
+<arg declared_type='UIView*' index='0' name='textFieldView' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithViewController:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='lastTextFieldReturnKeyType'>
+<retval declared_type='UIReturnKeyType' type='i' type64='q'/>
+</method>
+<method selector='removeResponderFromView:'>
+<arg declared_type='UIView*' index='0' name='view' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeTextFieldView:'>
+<arg declared_type='UIView*' index='0' name='textFieldView' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLastTextFieldReturnKeyType:'>
+<arg declared_type='UIReturnKeyType' index='0' name='lastTextFieldReturnKeyType' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setToolbarManageBehaviour:'>
+<arg declared_type='IQAutoToolbarManageBehaviour' index='0' name='toolbarManageBehaviour' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='toolbarManageBehaviour'>
+<retval declared_type='IQAutoToolbarManageBehaviour' type='i' type64='q'/>
+</method>
+</class>
+<class name='IQSegmentedNextPrevious'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithTarget:previousAction:nextAction:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='previousAction' type=':'/>
+<arg declared_type='SEL' index='2' name='nextAction' type=':'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='new'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='IQTextView'>
+<method selector='placeholder'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setPlaceholder:'>
+<arg declared_type='NSString*' index='0' name='placeholder' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='IQTitleBarButtonItem'>
+<method selector='font'>
+<retval declared_type='UIFont*' type='@'/>
+</method>
+<method selector='initWithFrame:title:'>
+<arg declared_type='CGRect' index='0' name='frame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' type64='{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg declared_type='NSString*' index='1' name='title' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setFont:'>
+<arg declared_type='UIFont*' index='0' name='font' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='IQToolbar'>
+<method selector='setTitleFont:'>
+<arg declared_type='UIFont*' index='0' name='titleFont' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='titleFont'>
+<retval declared_type='UIFont*' type='@'/>
+</method>
+</class>
+<class name='NSArray'>
+<method selector='sortedArrayByPosition'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='sortedArrayByTag'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+<class name='UIView'>
+<method selector='addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='cancelAction' type=':'/>
+<arg declared_type='SEL' index='2' name='doneAction' type=':'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:shouldShowPlaceholder:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='cancelAction' type=':'/>
+<arg declared_type='SEL' index='2' name='doneAction' type=':'/>
+<arg declared_type='BOOL' index='3' name='showPlaceholder' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:titleText:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='cancelAction' type=':'/>
+<arg declared_type='SEL' index='2' name='doneAction' type=':'/>
+<arg declared_type='NSString*' index='3' name='titleText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addDoneOnKeyboardWithTarget:action:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='action' type=':'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addDoneOnKeyboardWithTarget:action:shouldShowPlaceholder:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='action' type=':'/>
+<arg declared_type='BOOL' index='2' name='showPlaceholder' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addDoneOnKeyboardWithTarget:action:titleText:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='action' type=':'/>
+<arg declared_type='NSString*' index='2' name='titleText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='previousAction' type=':'/>
+<arg declared_type='SEL' index='2' name='nextAction' type=':'/>
+<arg declared_type='SEL' index='3' name='doneAction' type=':'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction:shouldShowPlaceholder:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='previousAction' type=':'/>
+<arg declared_type='SEL' index='2' name='nextAction' type=':'/>
+<arg declared_type='SEL' index='3' name='doneAction' type=':'/>
+<arg declared_type='BOOL' index='4' name='showPlaceholder' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction:titleText:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='SEL' index='1' name='previousAction' type=':'/>
+<arg declared_type='SEL' index='2' name='nextAction' type=':'/>
+<arg declared_type='SEL' index='3' name='doneAction' type=':'/>
+<arg declared_type='NSString*' index='4' name='titleText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRightButtonOnKeyboardWithText:target:action:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<arg declared_type='id' index='1' name='target' type='@'/>
+<arg declared_type='SEL' index='2' name='action' type=':'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRightButtonOnKeyboardWithText:target:action:shouldShowPlaceholder:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<arg declared_type='id' index='1' name='target' type='@'/>
+<arg declared_type='SEL' index='2' name='action' type=':'/>
+<arg declared_type='BOOL' index='3' name='showPlaceholder' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRightButtonOnKeyboardWithText:target:action:titleText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<arg declared_type='id' index='1' name='target' type='@'/>
+<arg declared_type='SEL' index='2' name='action' type=':'/>
+<arg declared_type='NSString*' index='3' name='titleText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRightLeftOnKeyboardWithTarget:leftButtonTitle:rightButtonTitle:rightButtonAction:leftButtonAction:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='NSString*' index='1' name='leftTitle' type='@'/>
+<arg declared_type='NSString*' index='2' name='rightTitle' type='@'/>
+<arg declared_type='SEL' index='3' name='rightAction' type=':'/>
+<arg declared_type='SEL' index='4' name='leftAction' type=':'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRightLeftOnKeyboardWithTarget:leftButtonTitle:rightButtonTitle:rightButtonAction:leftButtonAction:shouldShowPlaceholder:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='NSString*' index='1' name='leftTitle' type='@'/>
+<arg declared_type='NSString*' index='2' name='rightTitle' type='@'/>
+<arg declared_type='SEL' index='3' name='rightAction' type=':'/>
+<arg declared_type='SEL' index='4' name='leftAction' type=':'/>
+<arg declared_type='BOOL' index='5' name='showPlaceholder' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addRightLeftOnKeyboardWithTarget:leftButtonTitle:rightButtonTitle:rightButtonAction:leftButtonAction:titleText:'>
+<arg declared_type='id' index='0' name='target' type='@'/>
+<arg declared_type='NSString*' index='1' name='leftTitle' type='@'/>
+<arg declared_type='NSString*' index='2' name='rightTitle' type='@'/>
+<arg declared_type='SEL' index='3' name='rightAction' type=':'/>
+<arg declared_type='SEL' index='4' name='leftAction' type=':'/>
+<arg declared_type='NSString*' index='5' name='titleText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='bottom'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='boundsCenter'>
+<retval declared_type='CGPoint' type='{CGPoint=ff}' type64='{CGPoint=dd}'/>
+</method>
+<method selector='centerX'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='centerY'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='convertTransformToView:'>
+<arg declared_type='UIView*' index='0' name='toView' type='@'/>
+<retval declared_type='CGAffineTransform' type='{CGAffineTransform=ffffff}' type64='{CGAffineTransform=dddddd}'/>
+</method>
+<method selector='deepResponderViews'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='height'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='isAlertViewTextField'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isAskingCanBecomeFirstResponder'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isSearchBarTextField'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='left'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='origin'>
+<retval declared_type='CGPoint' type='{CGPoint=ff}' type64='{CGPoint=dd}'/>
+</method>
+<method selector='responderSiblings'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='right'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='setBottom:'>
+<arg declared_type='CGFloat' index='0' name='bottom' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCenterX:'>
+<arg declared_type='CGFloat' index='0' name='centerX' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCenterY:'>
+<arg declared_type='CGFloat' index='0' name='centerY' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEnablePrevious:next:'>
+<arg declared_type='BOOL' index='0' name='isPreviousEnabled' type='B'/>
+<arg declared_type='BOOL' index='1' name='isNextEnabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHeight:'>
+<arg declared_type='CGFloat' index='0' name='height' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeft:'>
+<arg declared_type='CGFloat' index='0' name='left' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOrigin:'>
+<arg declared_type='CGPoint' index='0' name='origin' type='{CGPoint=ff}' type64='{CGPoint=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRight:'>
+<arg declared_type='CGFloat' index='0' name='right' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldHideTitle:'>
+<arg declared_type='BOOL' index='0' name='shouldHideTitle' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSize:'>
+<arg declared_type='CGSize' index='0' name='size' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTop:'>
+<arg declared_type='CGFloat' index='0' name='top' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWidth:'>
+<arg declared_type='CGFloat' index='0' name='width' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setX:'>
+<arg declared_type='CGFloat' index='0' name='x' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setY:'>
+<arg declared_type='CGFloat' index='0' name='y' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldHideTitle'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='size'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+<method selector='subHierarchy'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='superCollectionView'>
+<retval declared_type='UICollectionView*' type='@'/>
+</method>
+<method selector='superHierarchy'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='superScrollView'>
+<retval declared_type='UIScrollView*' type='@'/>
+</method>
+<method selector='superTableView'>
+<retval declared_type='UITableView*' type='@'/>
+</method>
+<method selector='top'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='viewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='width'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='x'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='y'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+</class>
+<class name='UIWindow'>
+<method selector='currentViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='topMostController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+</class>
+</signatures>
