@@ -1,6 +1,5 @@
-class DeviceStatusStyleSheet < ApplicationStylesheet
-  
-  def deviceLabel(st)
+module DeviceStatusViewStylesheet 
+  def device_label(st)
     st.frame = {t: 0, l: 0, w: 320, h: 160}
     st.background_color = color.from_hex('FFDB4C')
     st.text = "     Device Status"
@@ -8,7 +7,7 @@ class DeviceStatusStyleSheet < ApplicationStylesheet
     st.font = font.system(25)
   end
   
-  def gpsLabel(st)
+  def gps_label(st)
     st.frame = {t: 160, l: 0, w: 320, h: 40}
     st.text = "                 GPS Coordinates"
     st.background_color = color.from_hex("81F3FD")
@@ -25,7 +24,8 @@ class DeviceStatusStyleSheet < ApplicationStylesheet
   def latitude_value(st)
     st.frame = {t: 235, l: 170, w: 140, h: 30}
     st.background_color = color.from_hex("FFDB4C")
-    st.text = "latitude value"
+    st.text = " latitude value "
+    st.corner_radius = 5
   end
   
   def longitude_label(st)
@@ -37,10 +37,11 @@ class DeviceStatusStyleSheet < ApplicationStylesheet
   def longitude_value(st)
     st.frame = {t: 285, l: 170, w: 140, h: 30}
     st.background_color = color.from_hex("FFDB4C")
-    st.text = "longitude value"
+    st.text = " longitude value "
+    st.corner_radius = 5
   end
   
-  def batteryLabel(st)
+  def battery_label(st)
     st.frame = {t: 350, l: 0, w: 320, h: 40}
     st.text = "                 Battery Status"
     st.background_color = color.from_hex("81F3FD")
@@ -48,9 +49,10 @@ class DeviceStatusStyleSheet < ApplicationStylesheet
     st.color = color.white
   end
   
-  def batteryLabelValue(st)
+  def battery_label_value(st)
     st.frame = {t: 450, l: 80, w: 230, h: 40}
     st.background_color = color.from_hex("FFDB4C")
     st.text = "Battery charge level"
+    st.corner_radius = 5
   end
 end

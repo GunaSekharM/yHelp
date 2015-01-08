@@ -1,5 +1,5 @@
 schema "0001 intial" do
-  entity 'Profile_data' do
+  entity 'ProfileData' do
     string :fullName, optional: false
     string :age, optional: false
     string :gender, optional: false

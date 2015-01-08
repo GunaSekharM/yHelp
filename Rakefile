@@ -4,7 +4,8 @@ require 'motion/project/template/ios'
 require 'bundler'
 Bundler.require
 
-# require 'bubble-wrap'
+require 'bubble-wrap/location'
+require 'bubble-wrap/sms'
 
 Motion::Project::App.setup do |app|
 
@@ -26,7 +27,7 @@ Motion::Project::App.setup do |app|
 
   app.device_family = [:iphone, :ipad]
   app.interface_orientations = [:portrait]
-  app.frameworks += ['QuartzCore', 'CoreLocation', 'MessageUI', 'KeyboardManager']
+  app.frameworks += ['CoreLocation']
   app.prerendered_icon = true
   app.files += Dir.glob(File.join(app.project_dir, 'lib/**/*.rb'))
   app.info_plist["NSLocationWhenInUseUsageDescription"] = "Location is required to find out where you are"
