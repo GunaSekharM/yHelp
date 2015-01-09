@@ -5,16 +5,14 @@ module DeviceStatusViewStylesheet
     st.text = "     Device Status"
     st.color = color.white
     st.font = font.system(25)
-    st.text_alignment = :center
   end
   
   def gps_label(st)
     st.frame = {t: 160, l: 0, w: 320, h: 40}
-    st.text = "GPS Coordinates"
+    st.text = "                 GPS Coordinates"
     st.background_color = color.from_hex("81F3FD")
     st.font = font.system(20)
     st.color = color.white
-    st.text_alignment = :center
   end
   
   def latitude_label(st)
@@ -45,11 +43,10 @@ module DeviceStatusViewStylesheet
   
   def battery_label(st)
     st.frame = {t: 350, l: 0, w: 320, h: 40}
-    st.text = "Battery Status"
+    st.text = "                 Battery Status"
     st.background_color = color.from_hex("81F3FD")
     st.font = font.system(20)
     st.color = color.white
-    st.text_alignment = :center
   end
   
   def battery_label_value(st)
@@ -57,6 +54,5 @@ module DeviceStatusViewStylesheet
     st.background_color = color.from_hex("FFDB4C")
     st.text = "Battery charge level"
     st.corner_radius = 5
-    st.text_alignment = :center
   end
 end

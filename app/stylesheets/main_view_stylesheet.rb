@@ -22,4 +22,6 @@ module MainViewStyleSheet
     st.font = font.system(25)
     st.color = color.white
   end
+  
+  
 end

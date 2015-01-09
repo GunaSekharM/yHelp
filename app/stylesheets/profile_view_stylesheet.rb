@@ -39,7 +39,7 @@ module ProfileViewStylesheet
     st.text_color = color.red
   end
   
-  def ph_no(st)
+  def ph_no1(st)
     st.frame = {t: 310, l: 20, w: 200, h: 30}
     st.background_color = color.white
     st.corner_radius = 5
